@@ -9,28 +9,33 @@ var lettersLow = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 var specialChar = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", "/", ":", ";", "<", ">", "?", "@",]
 
 function generatePassword () {
-  var response = prompt("How many characters would you like?"+"(Please select between 8-128)")
-  console.log(response);
+  var charSel = prompt("How many characters would you like?"+"(Please select between 8-128)")
+  console.log(charSel);
   //If statement to return user to start if option isnt valid.
-  if (response < 8) {
+  if (charSel < 8) {
     window.alert("Please make sure it is 8 characters or more.");
     return;
   }
-  if (response > 128) {
+  if (charSel > 128) {
     window.alert("Please make sure it is 128 characters or less.");
     return;
   }
   
   //Added confirm function for yes or no questions. Thank you to Sabe.io for information.
-  var response = confirm("Would you like any special characters?")
-  console.log(response);
+  var numSel = confirm("Would you like any numbers")
+  console.log(numSel);
+  
+  var specSel = confirm("Would you like any special characters?")
+  console.log(specSel);
   
 
-  var response = confirm("Would you like any uppercase letters?")
-  console.log(response);
+  var uppSel = confirm("Would you like any uppercase letters?")
+  console.log(uppSel);
 
-  var response = confirm("Would you like any lowercase characters?")
-  console.log(response);
+  var lowSel = confirm("Would you like any lowercase characters?")
+  console.log(lowSel);
+
+//Add code to combine user selections
 
 }
 
