@@ -8,6 +8,23 @@ var lettersLow = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 //Special character list provided by OWASP, excluded several options.
 var specialChar = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", "/", ":", ";", "<", ">", "?", "@",]
 
+function generatePassword () {
+  var response = prompt("How many characters would you like?"+"(Please select between 8-128)")
+  console.log(response);
+  
+  var response = prompt("Would you like any special characters?")
+  console.log(response);
+
+  var response = prompt("Would you like any uppercase letters?")
+  console.log(response);
+
+  var response = prompt("Would you like any lowercase characters?")
+  console.log(response);
+
+}
+
+
+
 
 
 
