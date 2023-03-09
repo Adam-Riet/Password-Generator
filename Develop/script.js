@@ -13,9 +13,11 @@ function generatePassword () {
   console.log(response);
   //If statement to return user to start if option isnt valid.
   if (response < 8) {
+    window.alert("Please make sure it is 8 characters or more.");
     return;
   }
   if (response > 128) {
+    window.alert("Please make sure it is 128 characters or less.");
     return;
   }
   
