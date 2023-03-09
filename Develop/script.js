@@ -11,7 +11,7 @@ var specialChar = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", "/", ":", "
 function generatePassword () {
   var response = prompt("How many characters would you like?"+"(Please select between 8-128)")
   console.log(response);
-  //Add if/else command to return user to start if option isnt valid.
+  //If statement to return user to start if option isnt valid.
   if (response < 8) {
     return;
   }
@@ -19,13 +19,15 @@ function generatePassword () {
     return;
   }
   
-  var response = prompt("Would you like any special characters?")
+  //Added confirm function for yes or no questions. Thank you to Sabe.io for information.
+  var response = confirm("Would you like any special characters?")
+  console.log(response);
+  
+
+  var response = confirm("Would you like any uppercase letters?")
   console.log(response);
 
-  var response = prompt("Would you like any uppercase letters?")
-  console.log(response);
-
-  var response = prompt("Would you like any lowercase characters?")
+  var response = confirm("Would you like any lowercase characters?")
   console.log(response);
 
 }
