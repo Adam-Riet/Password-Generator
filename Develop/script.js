@@ -49,6 +49,7 @@ var passContainer = {
 return passContainer
 }
 
+//Created function to select characters based on user choice
 function generatePassword() {
 var passwordOptions = getPasswordInfo()
 var result = []
@@ -69,8 +70,10 @@ var result = []
     console.log(result);
   }
 
+  
 var generatedPassword = ""
 
+//Variable to excute random characters based on var result
 for (var index = 0; index < passwordOptions.length; index++) {
   var randomIndex = Math.floor(Math.random() * result.length)
   var randomResult = result[randomIndex]
@@ -78,17 +81,7 @@ for (var index = 0; index < passwordOptions.length; index++) {
   console.log(generatedPassword)
   }
 return generatedPassword
-
-
-
 }
-
-
-
-
-
-
-
 
 // Write password to the #password input
 function writePassword() {
