@@ -8,7 +8,9 @@ var lettersLow = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m
 //Special character list provided by OWASP, excluded several options.
 var specialChar = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", "/", ":", ";", "<", ">", "?", "@",]
 
-function generatePassword () {
+
+
+function getPasswordInfo () {
   var charSel = prompt("How many characters would you like?"+"(Please select between 8-128)")
   console.log(charSel);
   //If statement to return user to start if option isnt valid.
@@ -21,7 +23,7 @@ function generatePassword () {
     return;
   }
   
-  //Added confirm function for yes or no questions. Thank you to Sabe.io for information.
+  //Added confirm function to yes or no questions. Thank you to Sabe.io for information.
   var numSel = confirm("Would you like any numbers")
   console.log(numSel);
   
@@ -35,7 +37,22 @@ function generatePassword () {
   var lowSel = confirm("Would you like any lowercase characters?")
   console.log(lowSel);
 
-//Add code to combine user selections
+var passContainer = {
+ length: charSel, 
+ hasSpecialCharacters: specSel,
+ hasNumbers: numSel,
+ hasUppercase: uppSel,
+ hasLowerCase: lowSel,
+
+}
+return passContainer
+}
+
+function generatePassword() {
+var passwordOptions = getPasswordInfo()
+
+
+
 
 }
 
