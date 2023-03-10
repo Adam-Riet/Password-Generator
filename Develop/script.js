@@ -50,12 +50,20 @@ return passContainer
 
 function generatePassword() {
 var passwordOptions = getPasswordInfo()
+var result = []
+  if (passwordOptions.hasSpecialCharacters) {
+    result.push(specialChar)
+    console.log(result);
+  }
+
+
 
 
 
 
 }
 
+generatePassword();
 
 
 
