@@ -37,6 +37,7 @@ function getPasswordInfo () {
   var lowSel = confirm("Would you like any lowercase characters?")
   console.log(lowSel);
 
+// Created variable to contain user submitted info
 var passContainer = {
  length: charSel, 
  hasSpecialCharacters: specSel,
@@ -52,30 +53,37 @@ function generatePassword() {
 var passwordOptions = getPasswordInfo()
 var result = []
   if (passwordOptions.hasSpecialCharacters) {
-    result.push(specialChar)
+    result.push(...specialChar)
     console.log(result);
   }
-  if (passwordOptions.hasSpecialCharacters) {
-    result.push(numbers)
+  if (passwordOptions.hasNumbers) {
+    result.push(...numbers)
     console.log(result);
   }
-  if (passwordOptions.hasSpecialCharacters) {
-    result.push(lettersCap)
+  if (passwordOptions.hasUppercase) {
+    result.push(...lettersCap)
     console.log(result);
   }
-  if (passwordOptions.hasSpecialCharacters) {
-    result.push(lettersLow)
+  if (passwordOptions.hasLowerCase) {
+    result.push(...lettersLow)
     console.log(result);
   }
 
+var generatedPassword = ""
 
-
+for (var index = 0; index < passwordOptions.length; index++) {
+  var randomIndex = Math.floor(Math.random() * result.length)
+  var randomResult = result[randomIndex]
+  generatedPassword += randomResult
+  console.log(generatedPassword)
+  }
+return generatedPassword
 
 
 
 }
 
-// generatePassword();
+
 
 
 
