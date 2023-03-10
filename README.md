@@ -12,4 +12,4 @@ Thank you to Brandon A. for helping me work out some of the operations and savin
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-![Password-Generator](https://utah.bootcampcontent.com/utah-coding-bootcamp/UofU-VIRT-FSF-PT-02-2023-U-LOLC/-/raw/main/01%20-%20Class%20Content/03-JavaScript/02-Challenge/Assets/03-javascript-homework-demo.png)
+![Password-Generator](https://github.com/Adam-Riet/Password-Generator/blob/main/assets/images/03-javascript-homework-demo.png)
