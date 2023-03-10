@@ -55,6 +55,18 @@ var result = []
     result.push(specialChar)
     console.log(result);
   }
+  if (passwordOptions.hasSpecialCharacters) {
+    result.push(numbers)
+    console.log(result);
+  }
+  if (passwordOptions.hasSpecialCharacters) {
+    result.push(lettersCap)
+    console.log(result);
+  }
+  if (passwordOptions.hasSpecialCharacters) {
+    result.push(lettersLow)
+    console.log(result);
+  }
 
 
 
@@ -63,7 +75,7 @@ var result = []
 
 }
 
-generatePassword();
+// generatePassword();
 
 
 
