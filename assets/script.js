@@ -24,7 +24,7 @@ function getPasswordInfo () {
   }
   
   //Added confirm function to yes or no questions. Thank you to Sabe.io for information.
-  var numSel = confirm("Would you like any numbers")
+  var numSel = confirm("Would you like any numbers?")
   console.log(numSel);
   
   var specSel = confirm("Would you like any special characters?")
