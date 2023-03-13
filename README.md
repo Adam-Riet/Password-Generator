@@ -12,4 +12,6 @@ Thank you to Brandon A. for helping me work out some of the operations and savin
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
+https://adam-riet.github.io/Password-Generator/
+
 ![Password-Generator](https://github.com/Adam-Riet/Password-Generator/blob/main/assets/images/03-javascript-homework-demo.png)
